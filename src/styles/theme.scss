@@ -1,0 +1,185 @@
+//다크모드
+.dark {
+  color: #ffffffde;
+  background-color: #191917;
+  header {
+    .themeBtn {
+      background-color: #ffffffde;
+    }
+  }
+
+  footer {
+    border-top: 1px solid rgba(255, 255, 255, .3);
+  }
+
+  .DropDownMenu {
+    background-color: #f8f8f4;
+    .menuWrap {
+      .links {
+        a {
+          color: #191917;
+        }
+      }
+    }
+    .snsWrap {
+      li {
+        a {
+          color: #191917;
+          &::after {
+            background-color: #1d1d1b;
+          }
+        }
+      }
+    }
+  }
+
+  //home.tsx
+  .projects {
+    .slideWrap {
+      .slide a {
+        cursor: url(/public/assets/cursorSlide_dark.svg) 0 0, auto;
+      }
+    }
+  }
+
+  .contact {
+    .textLine {
+      div {
+        &:nth-child(2) {
+          p {
+            span {
+            -webkit-text-stroke-color: #ffffffde;
+            }
+          }
+        }
+      }
+    }
+    .getInTouch a span {
+      -webkit-text-stroke-color: #ffffffde;
+    }
+  }
+
+  //about.tsx
+  .career {
+    &__list {
+      li {
+        button, a {
+          color: #ffffffde;
+          border-bottom: 1px solid hsla(0,0%,100%,.125);
+        }
+      }
+    }
+  }
+
+  //work.tsx
+  .works {
+    .anchors {
+      background-color: #191917;
+      .anchors__container {
+        border-top: 1px solid #ffffffde;
+        border-bottom: 1px solid #ffffffde;
+      }
+    }
+    .anchors.fixed {
+      .anchors__container {
+        border-top: none;
+      }
+    }
+  }
+}
+
+
+//라이트모드
+.light {
+  color: #363636;
+  background-color: #ffffffde;
+
+  header {
+    .themeBtn {
+      background-color: #191917;
+    }
+  }
+
+  footer {
+    border-top: 1px solid rgba(0, 0, 0, .3);
+  }
+
+  .DropDownMenu {
+    background-color: #191917;
+    .menuWrap {
+      .links {
+        a {
+          color: #ffffffde;
+        }
+      }
+    }
+    .snsWrap {
+      li {
+        a {
+          color: #ffffffde;
+          &::after {
+            background-color: #ffffffde;
+          }
+        }
+      }
+    }
+  }
+
+  //home.tsx
+  .projects {
+    .slideWrap {
+      .slide a {
+        cursor: url(/public/assets/cursorSlide_light.svg) 0 0, auto;
+      }
+    }
+  }
+
+  .contact {
+    .textLine {
+      div {
+        &:nth-child(2) {
+          p {
+            span {
+            -webkit-text-stroke-color: #191917;
+            }
+          }
+        }
+      }
+    }
+    .getInTouch a span {
+      -webkit-text-stroke-color: #191917;
+    }
+  }
+
+   //about.tsx
+   .career {
+    &__list {
+      li {
+        button, a {
+          color: #363636;
+          border-bottom: 1px solid #363636;
+          svg g, svg path{
+            fill: #363636;
+            stroke: #363636;
+          }
+        }
+      }
+    }
+  }
+
+  //work.tsx
+  .works {
+    .anchors {
+      background-color: #ffffffde;
+      .anchors__container {
+        border-top: 1px solid #191917;
+        border-bottom: 1px solid #191917;
+      }
+    }
+    .anchors.fixed {
+      .anchors__container {
+        border-top: none;
+      }
+    }
+  }
+}

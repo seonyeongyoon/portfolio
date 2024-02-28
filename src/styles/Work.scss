@@ -1,0 +1,131 @@
+.intro {
+  font-family: 'Gallient', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  max-width: 80rem;
+  h2 {
+    font-size: 12rem;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+}
+
+.works {
+  font-family: 'Gallient', sans-serif;
+  font-weight: 400;
+  margin-top: 10rem;
+  .anchors.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 110;
+  }
+  .anchors__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2em 2.4em;
+    li {
+      cursor: pointer;
+      h4 {
+        font-size: 1rem;
+      }
+    }
+  }
+  .projects {
+    height: auto;
+    min-height: 100vh;
+    overflow: hidden;
+    &__Item {
+      
+      //padding-top: 3.9231rem;
+      a  {
+        display: block;
+        width: 100%;
+        display: flex;
+        height: 100vh;
+        align-items: center;
+      }
+      a > * {
+        position: relative;
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .top {
+        display: flex;
+        position: absolute;
+        top: 4vh;
+        left: 0;
+        white-space: nowrap;
+        transform-origin: 0%;
+        z-index: 10;
+        h2 {
+          font-size: 13rem;
+        }
+      }
+      .imgContent {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+        > * {
+          position: absolute;
+        }
+        figure {
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          z-index: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            height: 100%;
+            width: auto;
+          }
+        }
+        .top {
+          color: #191917;
+        }
+      .bottom {
+        h3:first-child {
+          margin-bottom: .5rem;
+        }
+        padding: 12vw 16vw;
+        z-index: 2;
+        text-align: center;
+        font-size: 1.4rem;
+        line-height: 1;
+        }
+      }
+      .textContent {
+        padding: 0 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .top {
+          margin-left: -100%;
+        }
+        .bottom {
+          font-size: 1.6rem;
+          font-family: 'pretendard', sans-serif;
+          line-height: 1.6;
+        }
+      }
+      &:nth-child(4) {
+        .imgContent {
+          color: #191917;
+        }
+      }
+    }
+  }
+}
