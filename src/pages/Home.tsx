@@ -256,14 +256,14 @@ const Home = () => {
       <section className="contact">
         <div className="textLine">
           <div>
-            <p>
+            <div>
               <ParallaxText baseVelocity={-5}>Get In Touch · </ParallaxText>
-            </p>
+            </div>
           </div>
           <div>
-            <p>
+            <div>
               <ParallaxText baseVelocity={5}>Get In Touch · </ParallaxText>
-            </p>
+            </div>
           </div>
         </div>
 
@@ -273,7 +273,7 @@ const Home = () => {
           whileInView="onscreen"
           viewport={{ once: true, amount: 0.8 }}
         >
-          <motion.p variants={scrollVariants}>WANT TO TALK ABOUT SOMETHING?</motion.p>
+          <motion.div variants={scrollVariants}>WANT TO TALK ABOUT SOMETHING?</motion.div>
           <motion.h4 variants={scrollVariants}>
             <a href="mailto:sun940204@naver.com">
               <span className="gallient">Get In Touch</span>

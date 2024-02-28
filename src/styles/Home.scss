@@ -174,14 +174,14 @@
       animation: toLeft 15s linear infinite;
       &:nth-child(2) {
         animation-name: toRight;
-        p {
+        div {
           span {
             -webkit-text-stroke-width: 1px;
             color: transparent;
           }
         }
       }
-      p {
+      div {
         span {
           font-size: 6.6666rem;
           font-weight: 700;

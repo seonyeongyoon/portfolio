@@ -128,7 +128,7 @@ const About = () => {
             <ul>
               <li>
                 <button className="row" onClick={() => {toggleOpen1();}}>
-                  <svg className="starsvg" width="35px" height="35px" viewBox="0 0 35 35" version="1.1"><title>image</title><g id="desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="ABOUT" transform="translate(-219.000000, -3207.000000)" fill="#ffffffde" fill-rule="nonzero"><g id="image" transform="translate(219.000000, 3207.000000)"><polygon id="Path" points="10.428 34.45 11.328 23.56 0.528 24.82 8.718 17.71 0.528 10.51 11.328 11.86 10.428 0.97 17.268 9.43 24.198 0.97 23.208 11.86 34.008 10.51 25.818 17.71 34.008 24.82 23.208 23.56 24.198 34.45 17.268 25.9"></polygon></g></g></g></svg>
+                  <svg className="starsvg" width="35px" height="35px" viewBox="0 0 35 35" version="1.1"><title>image</title><g id="desktop" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd"><g id="ABOUT" transform="translate(-219.000000, -3207.000000)" fill="#ffffffde" fillRule="nonzero"><g id="image" transform="translate(219.000000, 3207.000000)"><polygon id="Path" points="10.428 34.45 11.328 23.56 0.528 24.82 8.718 17.71 0.528 10.51 11.328 11.86 10.428 0.97 17.268 9.43 24.198 0.97 23.208 11.86 34.008 10.51 25.818 17.71 34.008 24.82 23.208 23.56 24.198 34.45 17.268 25.9"></polygon></g></g></g></svg>
                   <span className="col">웹 에이전시 나인파이브</span>
                   <span className="col-auto">2021 - 2022</span>
                 </button>
@@ -144,7 +144,7 @@ const About = () => {
                       <span className="col">Seah Group</span>
                       <span className="col-auto">2022</span>
                       <span className="col-2"></span>
-                      <span className="col-auto text-end"><svg width="9" height="9" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg"><path d="M.5.5h8M.7 8.3l7-7m.8.197V8.5" stroke="#FFF" fill="none" fill-rule="evenodd" stroke-linecap="square"></path></svg></span>
+                      <span className="col-auto text-end"><svg width="9" height="9" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg"><path d="M.5.5h8M.7 8.3l7-7m.8.197V8.5" stroke="#FFF" fill="none" fillRule="evenodd" stroke-linecap="square"></path></svg></span>
                     </a>
                   </li>
                   <li>
@@ -152,7 +152,7 @@ const About = () => {
                       <span className="col">Seah Group Affilates</span>
                       <span className="col-auto">2021 - 2022</span>
                       <span className="col-2"></span>
-                      <span className="col-auto text-end"><svg width="9" height="9" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg"><path d="M.5.5h8M.7 8.3l7-7m.8.197V8.5" stroke="#FFF" fill="none" fill-rule="evenodd" stroke-linecap="square"></path></svg></span>
+                      <span className="col-auto text-end"><svg width="9" height="9" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg"><path d="M.5.5h8M.7 8.3l7-7m.8.197V8.5" stroke="#FFF" fill="none" fillRule="evenodd" stroke-linecap="square"></path></svg></span>
                     </a>
                   </li>
                   <li>
@@ -160,14 +160,14 @@ const About = () => {
                       <span className="col">BGF</span>
                       <span className="col-auto">2021 - 2022</span>
                       <span className="col-2"></span>
-                      <span className="col-auto text-end"><svg width="9" height="9" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg"><path d="M.5.5h8M.7 8.3l7-7m.8.197V8.5" stroke="#FFF" fill="none" fill-rule="evenodd" stroke-linecap="square"></path></svg></span>
+                      <span className="col-auto text-end"><svg width="9" height="9" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg"><path d="M.5.5h8M.7 8.3l7-7m.8.197V8.5" stroke="#FFF" fill="none" fillRule="evenodd" stroke-linecap="square"></path></svg></span>
                     </a>
                   </li>
                 </motion.ul>
               </li>
               <li>
                 <button className="row" onClick={toggleOpen2}>
-                  <svg className="starsvg" width="35px" height="35px" viewBox="0 0 35 35" version="1.1"><title>image</title><g id="desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="ABOUT" transform="translate(-219.000000, -3207.000000)" fill="#ffffffde" fill-rule="nonzero"><g id="image" transform="translate(219.000000, 3207.000000)"><polygon id="Path" points="10.428 34.45 11.328 23.56 0.528 24.82 8.718 17.71 0.528 10.51 11.328 11.86 10.428 0.97 17.268 9.43 24.198 0.97 23.208 11.86 34.008 10.51 25.818 17.71 34.008 24.82 23.208 23.56 24.198 34.45 17.268 25.9"></polygon></g></g></g></svg>
+                  <svg className="starsvg" width="35px" height="35px" viewBox="0 0 35 35" version="1.1"><title>image</title><g id="desktop" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd"><g id="ABOUT" transform="translate(-219.000000, -3207.000000)" fill="#ffffffde" fillRule="nonzero"><g id="image" transform="translate(219.000000, 3207.000000)"><polygon id="Path" points="10.428 34.45 11.328 23.56 0.528 24.82 8.718 17.71 0.528 10.51 11.328 11.86 10.428 0.97 17.268 9.43 24.198 0.97 23.208 11.86 34.008 10.51 25.818 17.71 34.008 24.82 23.208 23.56 24.198 34.45 17.268 25.9"></polygon></g></g></g></svg>
                   <span className="col">멋쟁이사자처럼 프론트엔드스쿨</span>
                   <span className="col-auto">2023</span>
                 </button>
@@ -181,7 +181,7 @@ const About = () => {
                       <span className="col">자바스크립트 프로젝트</span>
                       <span className="col-auto">2023</span>
                       <span className="col-2"></span>
-                      <span className="col-auto text-end"><svg width="9" height="9" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg"><path d="M.5.5h8M.7 8.3l7-7m.8.197V8.5" stroke="#FFF" fill="none" fill-rule="evenodd" stroke-linecap="square"></path></svg></span>
+                      <span className="col-auto text-end"><svg width="9" height="9" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg"><path d="M.5.5h8M.7 8.3l7-7m.8.197V8.5" stroke="#FFF" fill="none" fillRule="evenodd" stroke-linecap="square"></path></svg></span>
                     </a>
                   </li>
                   <li>
@@ -189,14 +189,14 @@ const About = () => {
                       <span className="col">리액트 프로젝트</span>
                       <span className="col-auto">2023</span>
                       <span className="col-2"></span>
-                      <span className="col-auto text-end"><svg width="9" height="9" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg"><path d="M.5.5h8M.7 8.3l7-7m.8.197V8.5" stroke="#FFF" fill="none" fill-rule="evenodd" stroke-linecap="square"></path></svg></span>
+                      <span className="col-auto text-end"><svg width="9" height="9" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg"><path d="M.5.5h8M.7 8.3l7-7m.8.197V8.5" stroke="#FFF" fill="none" fillRule="evenodd" stroke-linecap="square"></path></svg></span>
                     </a>
                   </li>
                 </motion.ul>
               </li>
               <li>
                 <button className="row" onClick={toggleOpen3}>
-                  <svg className="starsvg" width="35px" height="35px" viewBox="0 0 35 35" version="1.1"><title>image</title><g id="desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="ABOUT" transform="translate(-219.000000, -3207.000000)" fill="#ffffffde" fill-rule="nonzero"><g id="image" transform="translate(219.000000, 3207.000000)"><polygon id="Path" points="10.428 34.45 11.328 23.56 0.528 24.82 8.718 17.71 0.528 10.51 11.328 11.86 10.428 0.97 17.268 9.43 24.198 0.97 23.208 11.86 34.008 10.51 25.818 17.71 34.008 24.82 23.208 23.56 24.198 34.45 17.268 25.9"></polygon></g></g></g></svg>
+                  <svg className="starsvg" width="35px" height="35px" viewBox="0 0 35 35" version="1.1"><title>image</title><g id="desktop" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd"><g id="ABOUT" transform="translate(-219.000000, -3207.000000)" fill="#ffffffde" fillRule="nonzero"><g id="image" transform="translate(219.000000, 3207.000000)"><polygon id="Path" points="10.428 34.45 11.328 23.56 0.528 24.82 8.718 17.71 0.528 10.51 11.328 11.86 10.428 0.97 17.268 9.43 24.198 0.97 23.208 11.86 34.008 10.51 25.818 17.71 34.008 24.82 23.208 23.56 24.198 34.45 17.268 25.9"></polygon></g></g></g></svg>
                   <span className="col">멋쟁이사자처럼 프론트엔드스쿨 플러스</span>
                   <span className="col-auto">2023</span>
                 </button>
@@ -210,7 +210,7 @@ const About = () => {
                       <span className="col">자바스크립트 프로젝트</span>
                       <span className="col-auto">2023</span>
                       <span className="col-2"></span>
-                      <span className="col-auto text-end"><svg width="9" height="9" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg"><path d="M.5.5h8M.7 8.3l7-7m.8.197V8.5" stroke="#FFF" fill="none" fill-rule="evenodd" stroke-linecap="square"></path></svg></span>
+                      <span className="col-auto text-end"><svg width="9" height="9" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg"><path d="M.5.5h8M.7 8.3l7-7m.8.197V8.5" stroke="#FFF" fill="none" fillRule="evenodd" stroke-linecap="square"></path></svg></span>
                     </a>
                   </li>
                   <li>
@@ -218,7 +218,7 @@ const About = () => {
                       <span className="col">리액트 프로젝트</span>
                       <span className="col-auto">2023</span>
                       <span className="col-2"></span>
-                      <span className="col-auto text-end"><svg width="9" height="9" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg"><path d="M.5.5h8M.7 8.3l7-7m.8.197V8.5" stroke="#FFF" fill="none" fill-rule="evenodd" stroke-linecap="square"></path></svg></span>
+                      <span className="col-auto text-end"><svg width="9" height="9" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg"><path d="M.5.5h8M.7 8.3l7-7m.8.197V8.5" stroke="#FFF" fill="none" fillRule="evenodd" stroke-linecap="square"></path></svg></span>
                     </a>
                   </li> */}
                   <li>
@@ -226,7 +226,7 @@ const About = () => {
                       <span className="col">Next.js 프로젝트</span>
                       <span className="col-auto">2023</span>
                       <span className="col-2"></span>
-                      <span className="col-auto text-end"><svg width="9" height="9" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg"><path d="M.5.5h8M.7 8.3l7-7m.8.197V8.5" stroke="#FFF" fill="none" fill-rule="evenodd" stroke-linecap="square"></path></svg></span>
+                      <span className="col-auto text-end"><svg width="9" height="9" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg"><path d="M.5.5h8M.7 8.3l7-7m.8.197V8.5" stroke="#FFF" fill="none" fillRule="evenodd" stroke-linecap="square"></path></svg></span>
                     </a>
                   </li>
                 </motion.ul>
