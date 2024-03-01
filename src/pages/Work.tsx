@@ -8,11 +8,11 @@ import {
 
 const Work = () => {
   const [isAnchorFixed, setIsAnchorFixed] = useState(false);
-  const anchorRef = useRef<null>(null);
+  const anchorRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > anchorRef.current.offsetTop) {
+      if (window.scrollY > anchorRef.current!.offsetTop) {
         setIsAnchorFixed(true);
       } else {
         setIsAnchorFixed(false);
@@ -27,11 +27,13 @@ const Work = () => {
   }, []);
 
 
-  const scrollToRef = (ref) => {
-    window.scrollTo({
-      top: ref.current.offsetTop,
-      behavior: 'smooth'
-    });
+  const scrollToRef = (ref: React.MutableRefObject<HTMLDivElement | null>) => {
+    if (ref.current) {
+      window.scrollTo({
+        top: ref.current.offsetTop,
+        behavior: 'smooth'
+      });
+    }
   };
 
   
@@ -43,7 +45,7 @@ const Work = () => {
     photoshop: useRef<null>(null),
   };
 
-  const handleAnchorClick = (ref) => {
+  const handleAnchorClick = (ref: React.MutableRefObject<HTMLDivElement | null>) => {
     scrollToRef(ref);
   };
 
@@ -83,7 +85,7 @@ const Work = () => {
     <>
       <section className="intro">
         <h2 className="gallient">PROJECTS</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem consectetur eum sequi saepe maiores accusamus tempore illo ab vel assumenda, voluptatibus architecto, asperiores odio qui laboriosam delectus nihil rerum! Ex.</p>
+        <p>제가 작업한 project들을 소개합니다.</p>
       </section>
 
       <section className="works">

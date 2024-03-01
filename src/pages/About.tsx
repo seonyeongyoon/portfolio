@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./../styles/About.scss"
-import { motion, useCycle, Variants } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 const scrollVariants: Variants = {
   offscreen: {
@@ -59,14 +59,6 @@ const About = () => {
     setIsOpen2(false);
     setIsOpen3(!isOpen3);
   };
-
-  const [isClicked, setIsClicked] = useState(false);
-  const handleToggle = () => {
-    setIsClicked(!isClicked);
-  }
-  const [isOpen, toggleOpen] = useCycle(false, true);
-  //const containerRef = useRef(null);
-  //const { height } = useDimensions(containerRef)
 
   return (
     <>

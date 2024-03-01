@@ -4,7 +4,7 @@ import DropDownMenu from "./../components/DropDownMenu";
 import { Link } from "react-router-dom";
 import "./../styles/Header.scss";
 
-const Header = ({}) => {
+const Header = () => {
   const [isClicked, setIsClicked] = useState<boolean>(false)
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
@@ -59,7 +59,7 @@ const Header = ({}) => {
           </button>
         </div>
       </div>
-      {isClicked && <DropDownMenu isOpen={isClicked} closeMenu={() => setIsClicked(false)} />}
+      {isClicked && <DropDownMenu isOpen={isClicked} closeMenu={() => closeMenu()} />}
     </header>
   );
 };

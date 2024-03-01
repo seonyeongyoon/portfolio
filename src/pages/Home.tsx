@@ -19,6 +19,10 @@ interface ParallaxProps {
   baseVelocity: number;
 }
 
+interface Swiper {
+  activeIndex: number;
+}
+
 const scrollVariants: Variants = {
   offscreen: {
     opacity: 0,
@@ -92,7 +96,7 @@ const ParallaxText = ({ children, baseVelocity = 100 }: ParallaxProps) => {
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   
-  const handleSlideChange = (swiper) => {
+  const handleSlideChange = (swiper: Swiper) => {
     setCurrentSlide(swiper.activeIndex);
   };
   
@@ -161,18 +165,6 @@ const Home = () => {
       </section>
 
       <section className="projects">
-        {/* <Swiper
-          spaceBetween={50}
-          slidesPerView={3}
-          onSlideChange={() => console.log('slide change')}
-          onSwiper={(swiper) => console.log(swiper)}
-        >
-          <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-        </Swiper> */}
-        
         <motion.div 
           className="container"
           initial="offscreen"
