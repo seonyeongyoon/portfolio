@@ -192,7 +192,7 @@ const Home = () => {
                     <p>정보 접근 취약자의 정보 격차를 해소하고, 홈페이지의 사용성을 증대시키기 위해<br/> 웹표준 및 웹접근성을 기반으로 설계하였습니다. 또한 어떤 환경에서도 동일한 경험을 전달하기 위해 풀 반응형 홈페이지로 구축했습니다. 나아가 글로벌 기업의 면모에 맞게 <span className="wsnr">해외 접속자도</span> 원활하게 정보를 볼 수 있도록 글로벌 서버 환경을 구성했습니다.</p>
                   </div>
                   <figure>
-                    <img src="/src/assets/images/seah.png" alt="" />
+                    <img src="/public/assets/images/seah.png" alt="" />
                   </figure>
                 </a>
               </SwiperSlide>
@@ -203,7 +203,7 @@ const Home = () => {
                     <p>통합 웹사이트 정체성에 맞는 시각적 / 기능적인 일관성을 유지하기 위해, 브랜드 아이덴티티 요소를 체계적으로 재사용하고 각 UI 구성 요소를 모듈화한 디자인 시스템을 구축하였습니다. 모든 요소들은 계열사 각각의 콘텐츠 목적에 맞게끔 조화롭고 유연하게 배치할 수 있도록 제작 되었습니다.</p>
                   </div>
                   <figure>
-                    <img src="/src/assets/images/seahSteel.png" alt="" />
+                    <img src="/public/assets/images/seahSteel.png" alt="" />
                   </figure>
                 </a>
               </SwiperSlide>
@@ -214,7 +214,7 @@ const Home = () => {
                     <p>기존의 BGF 지주사 사이트 리뉴얼 작업을 담당하였습니다.<br/> 메인페이지는 전면 리뉴얼하였으며, 같은 레이아웃인데 각기 다른 구조로 코딩되어 있던 서브페이지들의 구조를 통일하는 작업을 진행하였습니다.</p>
                   </div>
                   <figure>
-                    <img src="/src/assets/images/bgf.png" alt="" />
+                    <img src="/public/assets/images/bgf.png" alt="" />
                   </figure>
                 </a>
               </SwiperSlide>
@@ -225,7 +225,7 @@ const Home = () => {
                     <p>Dear, Xmas는 크리스마스의 감성과 특별한 순간을 함께 쌓아가는 웹 서비스입니다. 크리스마스와 관련된 컨텐츠를 즐길 수 있습니다. 코드 충돌을 줄이고 브랜치 관리가 용이한 Git Flow 방식을 사용하여 기능 브랜치를 만들고 각자 작업 브랜치를 따로 생성하여 작업하고, 기능 브랜치로 PR을 올립니다. PR은 코드 리뷰 담당자를 지정하여 검토 후 Merge를 진행합니다.</p>
                   </div>
                   <figure>
-                    <img src="/src/assets/images/dearXmas.png" alt="" />
+                    <img src="/public/assets/images/dearXmas.png" alt="" />
                   </figure>
                 </a>
               </SwiperSlide>
@@ -236,7 +236,7 @@ const Home = () => {
                     <p>포토샵 보정에 쓰이는 흑백, 엠보싱, 반전효과 등 여러 기능들을 javascript을 사용하여 직접 구현해보며 화소가 어떤 원리로 처리되는지 원리를 파악할 수 있었습니다.</p>
                   </div>
                   <figure>
-                    <img src="/src/assets/images/photoshop.png" alt="" />
+                    <img src="/public/assets/images/photoshop.png" alt="" />
                   </figure>
                 </a>
               </SwiperSlide> */}
