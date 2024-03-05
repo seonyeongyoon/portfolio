@@ -120,7 +120,7 @@ const Work = () => {
                   <h3>01</h3><h3>SEAH GROUP</h3>
                 </div>
                 <figure className="imgWrap">
-                  <img src="/public/assets/images/seah.png" alt="" />
+                  <img src="/assets/images/seah.png" alt="" />
                 </figure>
               </div>
               <div className="textContent">
@@ -156,7 +156,7 @@ const Work = () => {
                   <h3>02</h3><h3>SEAH AFFLIATES</h3>
                 </div>
                 <figure className="imgWrap">
-                  <img src="/public/assets/images/seahSteel.png" alt="" />
+                  <img src="/assets/images/seahSteel.png" alt="" />
                 </figure>
               </div>
               <div className="textContent">
@@ -193,7 +193,7 @@ const Work = () => {
                   <h3>03</h3><h3>BGF</h3>
                 </div>
                 <figure className="imgWrap">
-                  <img src="/public/assets/images/bgf.png" alt="" />
+                  <img src="/assets/images/bgf.png" alt="" />
                 </figure>
               </div>
               <div className="textContent">
@@ -230,7 +230,7 @@ const Work = () => {
                   <h3>04</h3><h3>Dear, Xmas</h3>
                 </div>
                 <figure className="imgWrap">
-                  <img src="/public/assets/images/dearXmas.png" alt="" />
+                  <img src="/assets/images/dearXmas.png" alt="" />
                 </figure>
               </div>
               <div className="textContent">
@@ -265,7 +265,7 @@ const Work = () => {
                   <h3>04</h3><h3>PHOTOSHOP</h3>
                 </div>
                 <figure className="imgWrap">
-                  <img src="/public/assets/images/dearXmas.png" alt="" />
+                  <img src="/assets/images/dearXmas.png" alt="" />
                 </figure>
               </div>
               <div className="textContent">

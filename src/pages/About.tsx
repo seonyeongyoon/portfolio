@@ -70,7 +70,7 @@ const About = () => {
           transition={{ duration: 0.7 }}
         >
           <figure>
-            <img src="/public/assets/About.jpg" alt="" />
+            <img src="/assets/about.jpg" alt="" />
           </figure>
           
         </motion.div>

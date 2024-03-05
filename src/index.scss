@@ -272,9 +272,9 @@ section {
 @font-face {
 font-family: 'FF Good Pro';
 src: local('FF Good Pro Medium'), local('FF-Good-Pro-Medium'),
-    url('@/assets/fonts/FFGoodPro-Medium.woff2') format('woff2'),
-    url('@/assets/fonts/FFGoodPro-Medium.woff') format('woff'),
-    url('@/assets/fonts/FFGoodPro-Medium.ttf') format('truetype');
+    url('/assets/fonts/FFGoodPro-Medium.woff2') format('woff2'),
+    url('/assets/fonts/FFGoodPro-Medium.woff') format('woff'),
+    url('/assets/fonts/FFGoodPro-Medium.ttf') format('truetype');
 font-weight: 500;
 font-style: normal;
 }
@@ -283,7 +283,7 @@ font-style: normal;
 @font-face {
 font-family: 'Gallient';
 src: local('Gallient'), local('Gallient'),
-    url('@/assets/fonts/Gallient.ttf') format('truetype');
+    url('/assets/fonts/Gallient.ttf') format('truetype');
 font-weight: 400;
 font-style: normal;
 }
