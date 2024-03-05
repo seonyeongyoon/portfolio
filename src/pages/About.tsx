@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./../styles/About.scss"
+import "@/styles/About.scss"
 import { motion, Variants } from "framer-motion";
 
 const scrollVariants: Variants = {
@@ -62,7 +62,7 @@ const About = () => {
 
   return (
     <>
-      <section className="about">
+      <section className="about grid">
         <motion.div 
           className="about__Img"
           initial={{ opacity: 0, x: 0, y: 181 }} 

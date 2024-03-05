@@ -30,10 +30,6 @@
 }
 
 .profile {
-  display: grid;
-  grid-template-columns: 2.1875rem repeat(11,1fr 25px) 1fr 2.1875rem;
-  grid-template-rows: 0 auto;
-
   &__Img {
     //position: fixed;
     display: grid;
@@ -68,7 +64,7 @@
     letter-spacing: -.0033em;
     p {
       // font-size: 22.125rem;
-      font-size: 17.125rem;
+      font-size: 17.125vw;
       font-weight: 700;
       line-height: .9;
       text-align: center;
@@ -86,8 +82,8 @@
   justify-content: center;
   align-items: center;
   &__Text {
-    max-width: 80%;
-    margin: auto;
+    grid-column: 6 / 23;
+    grid-row: 3;
     p {
       font-family: Pretendard-Regular, sans-serif;
       font-size: 2rem;
@@ -227,6 +223,71 @@
   }
 
 }
+
+@media (max-width: 1280px) {
+  .greeting {
+    height: auto;
+    padding: 10rem 0;
+    &__Text {
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .projects {
+    height: auto;
+    .slideWrap {
+      margin-left: 12rem;
+      .slide a {
+        gap: 1.5rem;
+      }
+    }
+  }
+
+  .contact {
+    .getInTouch {
+      a span {
+        font-size: 10rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .greeting {
+    &__Text {
+      grid-column: 4 / 23;
+    }
+  }
+  .profile {
+    &__Img {
+      figure {
+        grid-column: 3/span 8;
+      }
+    }
+  }
+
+  .projects {
+    .slideNum {
+      display: none;
+    }
+    .slideWrap {
+      width: 100%;
+      margin-left: 0;
+      .slide a {
+        flex-direction: column;
+        .desc {
+          width: 80%;
+        }
+        figure {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
 
 // @keyframes toLeft {
 //   0% {

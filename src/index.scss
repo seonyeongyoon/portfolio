@@ -195,6 +195,16 @@ select {
   font-weight: 400;
 }
 
+
+.grid {
+  display: grid;
+  width: 100%;
+  max-width: 1790px;
+  margin: 0 auto;
+  grid-template-columns: 2.1875rem repeat(11,1fr 25px) 1fr 2.1875rem;
+  grid-template-rows: 0 auto;
+}
+
 .center {
   display: flex;
   flex-direction: column;
@@ -235,9 +245,19 @@ select {
   white-space: nowrap;
 }
 
+
 section {
   max-width: 111.875rem;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 11px repeat(11, 1fr 4px) 1fr 11px;
+  }
+  .pnOnly {
+    display: none;
+  }
 }
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;700&display=swap');
@@ -252,9 +272,9 @@ section {
 @font-face {
 font-family: 'FF Good Pro';
 src: local('FF Good Pro Medium'), local('FF-Good-Pro-Medium'),
-    url('./../font/FFGoodPro-Medium.woff2') format('woff2'),
-    url('./../font/FFGoodPro-Medium.woff') format('woff'),
-    url('./../font/FFGoodPro-Medium.ttf') format('truetype');
+    url('@/assets/fonts/FFGoodPro-Medium.woff2') format('woff2'),
+    url('@/assets/fonts/FFGoodPro-Medium.woff') format('woff'),
+    url('@/assets/fonts/FFGoodPro-Medium.ttf') format('truetype');
 font-weight: 500;
 font-style: normal;
 }
@@ -263,7 +283,7 @@ font-style: normal;
 @font-face {
 font-family: 'Gallient';
 src: local('Gallient'), local('Gallient'),
-    url('./../font/Gallient.ttf') format('truetype');
+    url('@/assets/fonts/Gallient.ttf') format('truetype');
 font-weight: 400;
 font-style: normal;
 }

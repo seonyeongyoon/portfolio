@@ -60,6 +60,7 @@
 .introduce {
   .text {
     width: 50%;
+    margin: 0 auto;
     & + .text {
       margin-top: 10rem;
     }
@@ -111,6 +112,28 @@
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    &__Img {
+      figure {
+        width: 33.125rem;
+      }
+    }
+  }
+
+  .introduce {
+    .text {
+      width: 80%;
+    }
+  }
+
+  .career {
+    &__list {
+      width: 100%;
     }
   }
 }

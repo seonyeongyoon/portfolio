@@ -12,7 +12,7 @@ import {
   useAnimationFrame
 } from "framer-motion";
 import 'swiper/css';
-import "./../styles/Home.scss";
+import "@/styles/Home.scss";
 
 interface ParallaxProps {
   children: string;
@@ -60,20 +60,20 @@ const ParallaxText = ({ children, baseVelocity = 100 }: ParallaxProps) => {
   const x = useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`);
 
   const directionFactor = useRef<number>(1);
-  useAnimationFrame((delta) => {
+  useAnimationFrame((_, delta) => {
     let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
-
+  
     //스크롤 방향 전환
     if (velocityFactor.get() < 0) {
       directionFactor.current = -1;
     } else if (velocityFactor.get() > 0) {
       directionFactor.current = 1;
     }
-
+  
     moveBy += directionFactor.current * moveBy * velocityFactor.get();
-
+  
     baseX.set(baseX.get() + moveBy);
-});
+  });
 
   /**
    * 하위 텍스트를 반복하는 횟수를 동적으로 계산
@@ -103,7 +103,7 @@ const Home = () => {
   return (
     <>
       <section 
-        className="profile"
+        className="profile grid"
       >
         <motion.div 
           className="profile__Img"
@@ -149,7 +149,7 @@ const Home = () => {
       </section>
 
       <section 
-        className="greeting"
+        className="greeting grid"
       >
         <motion.div 
           className="greeting__Text"

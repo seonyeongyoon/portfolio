@@ -4,7 +4,7 @@
   text-align: center;
   max-width: 80rem;
   h2 {
-    font-size: 12rem;
+    font-size: 12vw;
   }
   p {
     font-size: 1.6rem;
@@ -125,6 +125,31 @@
       &:nth-child(4) {
         .imgContent {
           color: #191917;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .works {
+    .projects {
+      &__Item {
+        a  {
+        flex-direction: column;
+        }
+        a > * {
+        width: 100%;
+        }
+        .top {
+          h2 {
+            font-size: 5rem;
+          }
+        }
+        .textContent {
+          .top {
+            display: none;
+          }
         }
       }
     }

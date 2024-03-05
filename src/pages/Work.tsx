@@ -1,4 +1,4 @@
-import "./../styles/Work.scss";
+import "@/styles/Work.scss";
 import { useEffect, useRef, useState } from 'react';
 import {
   motion,
