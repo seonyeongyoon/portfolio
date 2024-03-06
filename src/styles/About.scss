@@ -59,22 +59,23 @@
 
 .introduce {
   .text {
-    width: 50%;
-    margin: 0 auto;
+    width: 60%;
     & + .text {
       margin-top: 10rem;
     }
     p {
       font-family: 'pretendard', sans-serif;
+      word-break: keep-all;
+      font-size: 1.2rem;
       line-height: 1.53;
     }
   }
 }
 
 .career {
-  margin: 10rem 0;
+  margin: 10rem auto;
   &__list {
-    width: 50rem;
+    width: 60%;
     > ul > li > button svg {
       margin-right: 2.6rem;
       transition: .5s ease-in-out;

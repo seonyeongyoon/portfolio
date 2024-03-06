@@ -117,9 +117,10 @@
           margin-left: -100%;
         }
         .bottom {
-          font-size: 1.6rem;
           font-family: 'pretendard', sans-serif;
+          font-size: 1.6rem;
           line-height: 1.6;
+          word-break: keep-all;
         }
       }
       &:nth-child(4) {

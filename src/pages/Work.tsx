@@ -247,7 +247,7 @@ const Work = () => {
           </motion.div>
 
           {/* 5 */}
-          {/* <motion.div 
+          <motion.div 
             className="projects__Item" 
             initial="offscreen"
             whileInView="onscreen" 
@@ -279,7 +279,7 @@ const Work = () => {
                 </div>
               </div>
             </a>
-          </motion.div> */}
+          </motion.div>
         </div>
       </section>
     </>

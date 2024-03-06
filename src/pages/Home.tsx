@@ -229,7 +229,7 @@ const Home = () => {
                   </figure>
                 </a>
               </SwiperSlide>
-              {/* <SwiperSlide className="slide">
+              <SwiperSlide className="slide">
                 <a href="/" target='_blank'>
                   <div className="desc">
                     <h4 className="title">Photoshop</h4>
@@ -239,7 +239,7 @@ const Home = () => {
                     <img src="/assets/images/photoshop.png" alt="" />
                   </figure>
                 </a>
-              </SwiperSlide> */}
+              </SwiperSlide>
             </Swiper>
           </motion.div>
         </motion.div>
