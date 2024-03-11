@@ -182,7 +182,26 @@ header {
   }
 }
 
+@media (max-width: 768px) {
+  header {
+  .headerBar {
+    .logoWrap {
+      display: none;
+      }
+    }
+  }
 
+  .DropDownMenu {
+    .menuWrap {
+      .links {
+        a {
+          font-size: 6rem;
+        }
+      }
+    }
+  }
+  
+}
 @keyframes dropDown {
   0%{
       transform: translateY(-100%);
