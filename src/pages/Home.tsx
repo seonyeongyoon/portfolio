@@ -219,17 +219,28 @@ const Home = () => {
                 </a>
               </SwiperSlide>
               <SwiperSlide className="slide">
+                <a href="https://cafe-jijo.vercel.app/" target='_blank'>
+                  <div className="desc">
+                    <h4 className="title">카페 지조</h4>
+                    <p>풀 페이지 레이아웃의 카페 사이트입니다.<br/> 포켓베이스 SDK를 통해 데이터를 렌더링하였습니다.<br/> 로그인 / 회원가입, 장바구니, 게시판 기능을 구현하였습니다.</p>
+                  </div>
+                  <figure>
+                    <img src="/assets/images/cafejijo.png" alt="" />
+                  </figure>
+                </a>
+              </SwiperSlide>
+              <SwiperSlide className="slide">
                 <a href="https://dear-xmas.vercel.app/" target='_blank'>
                   <div className="desc">
                     <h4 className="title">dear, xmas</h4>
-                    <p>Dear, Xmas는 크리스마스의 감성과 특별한 순간을 함께 쌓아가는 웹 서비스입니다. 크리스마스와 관련된 컨텐츠를 즐길 수 있습니다. 코드 충돌을 줄이고 브랜치 관리가 용이한 Git Flow 방식을 사용하여 기능 브랜치를 만들고 각자 작업 브랜치를 따로 생성하여 작업하고, 기능 브랜치로 PR을 올립니다. PR은 코드 리뷰 담당자를 지정하여 검토 후 Merge를 진행합니다.</p>
+                    <p>Dear, Xmas는 크리스마스의 감성과 특별한 순간을 함께 쌓아가는 웹 서비스입니다. 크리스마스와 관련된 컨텐츠를 즐길 수 있습니다. 코드 충돌을 줄이고 브랜치 관리가 용이한 Git Flow 방식을 사용하여 기능 브랜치를 만들고 각자 작업 브랜치를 따로 생성하여 작업하였습니다.</p>
                   </div>
                   <figure>
                     <img src="/assets/images/dearXmas.png" alt="" />
                   </figure>
                 </a>
               </SwiperSlide>
-              <SwiperSlide className="slide">
+              {/* <SwiperSlide className="slide">
                 <a href="/" target='_blank'>
                   <div className="desc">
                     <h4 className="title">Photoshop</h4>
@@ -239,7 +250,7 @@ const Home = () => {
                     <img src="/assets/images/photoshop.png" alt="" />
                   </figure>
                 </a>
-              </SwiperSlide>
+              </SwiperSlide> */}
             </Swiper>
           </motion.div>
         </motion.div>

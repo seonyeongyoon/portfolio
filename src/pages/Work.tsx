@@ -41,8 +41,8 @@ const Work = () => {
     seah: useRef<null>(null),
     seahAffiliates: useRef<null>(null),
     bgf: useRef<null>(null),
-    dearXmas: useRef<null>(null),
-    photoshop: useRef<null>(null),
+    cafeJIJO: useRef<null>(null),
+    dearXmas: useRef<null>(null)
   };
 
   const handleAnchorClick = (ref: React.MutableRefObject<HTMLDivElement | null>) => {
@@ -94,8 +94,8 @@ const Work = () => {
             <li data-index="1" onClick={() => handleAnchorClick(projectRefs.seah)}><h4>01&nbsp;SEAH</h4></li>
             <li data-index="2" onClick={() => handleAnchorClick(projectRefs.seahAffiliates)}><h4>02&nbsp;SEAH AFFILATES</h4></li>
             <li data-index="3" onClick={() => handleAnchorClick(projectRefs.bgf)}><h4>03&nbsp;BGF</h4></li>
-            <li data-index="4" onClick={() => handleAnchorClick(projectRefs.dearXmas)}><h4>04&nbsp;DEAR,XMAS</h4></li>
-            {/* <li data-index="5" onClick={() => handleAnchorClick(projectRefs.photoshop)}><h4>05&nbsp;PHOTOSHOP</h4></li> */}
+            <li data-index="4" onClick={() => handleAnchorClick(projectRefs.cafeJIJO)}><h4>04&nbsp;cafe JIJO</h4></li>
+            <li data-index="5" onClick={() => handleAnchorClick(projectRefs.dearXmas)}><h4>05&nbsp;Dear, Xmas</h4></li>
           </ul>
         </div>
 
@@ -217,6 +217,41 @@ const Work = () => {
             initial="offscreen"
             whileInView="onscreen" 
             variants={scrollVariants}
+            ref={projectRefs.cafeJIJO}
+          >
+            <a href="https://cafe-jijo.vercel.app/" target="_blank">
+              <div className="imgContent">
+                <motion.div className="top" variants={textVariants}>
+                  <h2>cafe JIJO&nbsp;</h2>
+                  <h2>cafe JIJO&nbsp;</h2>
+                  <h2>cafe JIJO&nbsp;</h2>
+                </motion.div>
+                <div className="bottom">
+                  <h3>04</h3><h3>cafe jijo</h3>
+                </div>
+                <figure className="imgWrap">
+                  <img src="/assets/images/cafejijo.png" alt="" />
+                </figure>
+              </div>
+              <div className="textContent">
+                <motion.div className="top" variants={textVariants}>
+                <h2>cafe JIJO&nbsp;</h2>
+                  <h2>cafe JIJO&nbsp;</h2>
+                  <h2>cafe JIJO&nbsp;</h2>
+                </motion.div>
+                <div className="bottom">
+                  <p>풀 페이지 레이아웃의 카페 사이트입니다. 포켓베이스 SDK를 통해 데이터를 렌더링하였습니다. 로그인 / 회원가입, 장바구니, 지도 api를 이용한 메장찾기 기능, 게시판 기능을 구현하였습니다.</p>
+                </div>
+              </div>
+            </a>
+          </motion.div>
+
+          {/* 5 */}
+          <motion.div 
+            className="projects__Item" 
+            initial="offscreen"
+            whileInView="onscreen" 
+            variants={scrollVariants}
             ref={projectRefs.dearXmas}
           >
             <a href="https://dear-xmas.vercel.app/" target="_blank">
@@ -240,42 +275,7 @@ const Work = () => {
                   <h2>Dear, Xmas&nbsp;</h2>
                 </motion.div>
                 <div className="bottom">
-                  <p>Dear, Xmas는 크리스마스의 감성과 특별한 순간을 함께 쌓아가는 웹 서비스입니다. 크리스마스와 관련된 컨텐츠를 즐길 수 있습니다. 코드 충돌을 줄이고 브랜치 관리가 용이한 Git Flow 방식을 사용하여 기능 브랜치를 만들고 각자 작업 브랜치를 따로 생성하여 작업하고, 기능 브랜치로 PR을 올립니다. PR은 코드 리뷰 담당자를 지정하여 검토 후 Merge를 진행합니다.</p>
-                </div>
-              </div>
-            </a>
-          </motion.div>
-
-          {/* 5 */}
-          <motion.div 
-            className="projects__Item" 
-            initial="offscreen"
-            whileInView="onscreen" 
-            variants={scrollVariants}
-            ref={projectRefs.photoshop}
-          >
-            <a href="https://www.seah.co.kr/" target="_blank">
-              <div className="imgContent">
-                <motion.div className="top" variants={textVariants}>
-                  <h2>PHOTOSHOP&nbsp;</h2>
-                  <h2>PHOTOSHOP&nbsp;</h2>
-                  <h2>PHOTOSHOP&nbsp;</h2>
-                </motion.div>
-                <div className="bottom">
-                  <h3>04</h3><h3>PHOTOSHOP</h3>
-                </div>
-                <figure className="imgWrap">
-                  <img src="/assets/images/dearXmas.png" alt="" />
-                </figure>
-              </div>
-              <div className="textContent">
-                <motion.div className="top" variants={textVariants}>
-                  <h2>PHOTOSHOP&nbsp;</h2>
-                  <h2>PHOTOSHOP&nbsp;</h2>
-                  <h2>PHOTOSHOP&nbsp;</h2>
-                </motion.div>
-                <div className="bottom">
-                  <p>Tout commence ici : savoir tendre l’oreille et parfois la main, pour se rendre entièrement disponible. Laisser l'autre déposer son sujet, sa problématique et quelques fois ses peurs.<br/><br/> C’est aussi prendre le temps de recueillir l’essentiel, <br/> de tout étudier, décortiquer, regrouper. Ne rien laisser au hasard pour que chaque information, chaque détail partagé, devienne une opportunité pour vous aider à vous démarquer.</p>
+                  <p>Dear, Xmas는 크리스마스의 감성과 특별한 순간을 함께 쌓아가는 웹 서비스입니다. 크리스마스와 관련된 컨텐츠를 즐길 수 있습니다. 코드 충돌을 줄이고 브랜치 관리가 용이한 Git Flow 방식을 사용하여 기능 브랜치를 만들고 각자 작업 브랜치를 따로 생성하여 작업하였습니다.</p>
                 </div>
               </div>
             </a>
