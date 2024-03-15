@@ -3,3 +3,12 @@ footer {
   padding: 2% 0;
   font-size: 1.125rem;
 }
+
+@media (max-width: 768px) {
+  footer {
+    font-size: 1rem;
+    span {
+      display: block;
+    }
+  }
+}

@@ -149,7 +149,7 @@ const Home = () => {
       </section>
 
       <section 
-        className="greeting grid"
+        className="greeting"
       >
         <motion.div 
           className="greeting__Text"
@@ -157,9 +157,9 @@ const Home = () => {
           whileInView="onscreen"
           viewport={{ once: true, amount: 0.8 }}
         >
-          <motion.p variants={scrollVariants}>안녕하세요.<span className="emoji emoji--hello"></span> IT 트렌드에 발맞추기 위해  항상 노력하는 윤선영입니다.</motion.p>
+          <motion.p variants={scrollVariants}>안녕하세요.<span className="emoji emoji--hello"></span> IT 트렌드에 발 맞추기 위해  항상 노력하는 윤선영입니다.</motion.p>
           <motion.p variants={scrollVariants}>현재 하루가 다르게 변화하는 IT<span className="emoji emoji--it"></span> 트렌드를 따라잡기 위해 열심히 공부 중입니다.</motion.p> 
-          <motion.p variants={scrollVariants}>그 자리에 안주하지 않고 항상 공부하고<span className="emoji emoji--study"></span> 변화를 받아 들이는 트렌디한<br/> 프론트앤드 개발자로 성장해나가고 싶습니다.<span className="emoji emoji--smile"></span>
+          <motion.p variants={scrollVariants}>그 자리에 안주하지 않고 항상 공부하고<span className="emoji emoji--study"></span> 변화를 받아 들이는 트렌디한<br className='pcOnly'/> 프론트엔드 개발자로 성장해나가고 싶습니다.<span className="emoji emoji--smile"></span>
           </motion.p>
         </motion.div>
       </section>

@@ -184,10 +184,13 @@ header {
 
 @media (max-width: 768px) {
   header {
-  .headerBar {
-    .logoWrap {
-      display: none;
+    .headerBar {
+      .logoWrap {
+        display: none;
       }
+    }
+    .themeBtn {
+      right: 5.5rem;
     }
   }
 

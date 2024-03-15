@@ -245,7 +245,6 @@ select {
   white-space: nowrap;
 }
 
-
 section {
   max-width: 111.875rem;
   margin: 0 auto;
@@ -255,7 +254,7 @@ section {
   .grid {
     grid-template-columns: 11px repeat(11, 1fr 4px) 1fr 11px;
   }
-  .pnOnly {
+  .pcOnly {
     display: none;
   }
 }

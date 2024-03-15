@@ -257,7 +257,11 @@
 @media (max-width: 768px) {
   .greeting {
     &__Text {
-      grid-column: 4 / 23;
+      width: 90%;
+      margin: auto;
+      p {
+        font-size: 1.2rem;
+      }
     }
   }
   .profile {
@@ -278,10 +282,10 @@
       .slide a {
         flex-direction: column;
         .desc {
-          width: 80%;
+          width: 90%;
         }
         figure {
-          width: 80%;
+          width: 90%;
         }
       }
     }

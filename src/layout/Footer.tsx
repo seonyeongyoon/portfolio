@@ -1,9 +1,9 @@
-import "./../styles/Footer.scss";
+import "@/styles/Footer.scss";
 
 const Footer = () => {
   return (
     <footer>
-      COPYRIGHT 2024 © SEONYEONGYOON. ALL RIGHTS RESERVED.
+      <span>COPYRIGHT 2024 © SEONYEONGYOON.</span> <span>ALL RIGHTS RESERVED.</span>
     </footer>
   );
 };
