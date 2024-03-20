@@ -109,6 +109,26 @@ const About = () => {
       </section>
 
       <section className="career">
+        <div className="career__carouselWrap">
+          <div className="career__carousel">
+            <div className="career__carousel-slide career__carousel-slide--1">
+                <img style={{width: "240px"}} src="https://www.aboutluca.com/wp-content/themes/23/static/images/awards/aw-1.png" alt="" className="img-fluid w-image" data-alpha="0.1" />
+                <img style={{width: "240px"}} src="https://www.aboutluca.com/wp-content/themes/23/static/images/awards/aw-2.png" alt="" className="img-fluid w-image" data-alpha="0.1" />
+                <img style={{width: "240px"}} src="https://www.aboutluca.com/wp-content/themes/23/static/images/awards/aw-3.png" alt="" className="img-fluid w-image" data-alpha="0.1" />
+                <img style={{width: "240px"}} src="https://www.aboutluca.com/wp-content/themes/23/static/images/awards/aw-4.png" alt="" className="img-fluid w-image" data-alpha="0.1" />
+                <img style={{width: "240px"}} src="https://www.aboutluca.com/wp-content/themes/23/static/images/awards/aw-5.png" alt="" className="img-fluid w-image" data-alpha="0.1" />
+                <img style={{width: "240px"}} src="https://www.aboutluca.com/wp-content/themes/23/static/images/awards/aw-6.png" alt="" className="img-fluid w-image" data-alpha="0.1" />
+            </div>
+            <div className="career__carousel-slide career__carousel-slide--2">
+                <img style={{width: "240px"}} src="https://www.aboutluca.com/wp-content/themes/23/static/images/awards/aw-1.png" alt="" className="img-fluid w-image" data-alpha="0.1" />
+                <img style={{width: "240px"}} src="https://www.aboutluca.com/wp-content/themes/23/static/images/awards/aw-2.png" alt="" className="img-fluid w-image" data-alpha="0.1" />
+                <img style={{width: "240px"}} src="https://www.aboutluca.com/wp-content/themes/23/static/images/awards/aw-3.png" alt="" className="img-fluid w-image" data-alpha="0.1" />
+                <img style={{width: "240px"}} src="https://www.aboutluca.com/wp-content/themes/23/static/images/awards/aw-4.png" alt="" className="img-fluid w-image" data-alpha="0.1" />
+                <img style={{width: "240px"}} src="https://www.aboutluca.com/wp-content/themes/23/static/images/awards/aw-5.png" alt="" className="img-fluid w-image" data-alpha="0.1" />
+                <img style={{width: "240px"}} src="https://www.aboutluca.com/wp-content/themes/23/static/images/awards/aw-6.png" alt="" className="img-fluid w-image" data-alpha="0.1" />
+            </div> 
+          </div>
+        </div> 
         <div className="career__listWrap center">
           <motion.div 
             className="career__list"

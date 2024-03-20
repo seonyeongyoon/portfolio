@@ -74,6 +74,36 @@
 
 .career {
   margin: 10rem auto;
+  position: relative;
+  &__carouselWrap {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 50%;
+    opacity: .1;
+    animation: toLeft 60s linear infinite;
+  }
+  &__carousel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    gap: 5rem;
+    &-slide {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      gap: 5rem;
+      img {
+        overflow-clip-margin: content-box;
+        overflow: clip;
+      }
+    }
+  }
   &__list {
     width: 60%;
     > ul > li > button svg {
@@ -170,5 +200,16 @@
         }
       }
     }
+  }
+}
+
+@keyframes toLeft {
+  0% {
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, -50%, 0);
+    transform: translate3d(-100%, -50%, 0);
   }
 }
