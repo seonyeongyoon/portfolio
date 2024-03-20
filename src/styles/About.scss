@@ -75,6 +75,7 @@
 .career {
   margin: 10rem auto;
   position: relative;
+  height: 100vh;
   &__carouselWrap {
     position: absolute;
     left: 0;
@@ -82,6 +83,7 @@
     top: 50%;
     opacity: .1;
     animation: toLeft 60s linear infinite;
+    z-index: 1;
   }
   &__carousel {
     display: -webkit-box;
@@ -103,6 +105,11 @@
         overflow: clip;
       }
     }
+  }
+  &__listWrap {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
   }
   &__list {
     width: 60%;
