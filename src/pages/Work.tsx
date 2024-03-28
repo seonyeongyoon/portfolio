@@ -1,8 +1,5 @@
 import "@/styles/Work.scss";
-import {
-  Variants,
-  motion
-} from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 
 
@@ -10,7 +7,7 @@ const Work = () => {
   const [isFixedAnchors, setIsFixedAnchors] = useState(false);
   const [isFixedIndexes, setIsFixedIndexes] = useState<number[]>([]);
   const anchorRef = useRef<HTMLDivElement>(null);
-  const projectRefs = useRef<HTMLDivElement[]>([]);
+  const projectRefs = useRef<(HTMLDivElement | null)[]>([]);
   useEffect(() => {
 
     const handleScroll = () => {
@@ -35,29 +32,21 @@ const Work = () => {
   }, []);
   
   
-  const scrollToRef = (ref: React.MutableRefObject<HTMLDivElement | null>) => {
-    if (ref.current) {
-      window.scrollTo({
-        top: ref.current.offsetTop,
-        behavior: 'smooth'
-      });
-    }
-  };
+  // const scrollToRef = (ref: React.MutableRefObject<HTMLDivElement>) => {
+  //   if (ref.current) {
+  //     window.scrollTo({
+  //       top: ref.current.offsetTop,
+  //       behavior: 'smooth'
+  //     });
+  //   }
+  // };
 
-  const handleAnchorClick = (index: number) => {
-    if (projectRefs.current[index]) {
-      scrollToRef(projectRefs.current[index]);
-    }
-  };
+  // const handleAnchorClick = (index: number) => {
+  //   if (projectRefs.current[index]) {
+  //     scrollToRef(projectRefs.current[index]);
+  //   }
+  // };
 
-  
-  const scrollVariants: Variants = {
-    offscreen: {
-    },
-    onscreen: {
-      y: 0,
-    }
-  };
 
 
   const ParallaxText = ({ children }: { children: React.ReactNode }) => {
