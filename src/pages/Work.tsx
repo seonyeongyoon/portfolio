@@ -76,11 +76,11 @@ const Work = () => {
       <section className="works">
         <div ref={anchorRef} className={`anchors ${isFixedAnchors ? 'fixed' : ''}`}>
           <ul className="anchors__container">
-            <li onClick={() => handleAnchorClick(0)}><h4>01&nbsp;SEAH</h4></li>
-            <li onClick={() => handleAnchorClick(1)}><h4>02&nbsp;SEAH AFFILATES</h4></li>
-            <li onClick={() => handleAnchorClick(2)}><h4>03&nbsp;BGF</h4></li>
-            <li onClick={() => handleAnchorClick(3)}><h4>04&nbsp;cafe JIJO</h4></li>
-            <li onClick={() => handleAnchorClick(4)}><h4>05&nbsp;Dear, Xmas</h4></li>
+            <li><h4>01&nbsp;SEAH</h4></li>
+            <li><h4>02&nbsp;SEAH AFFILATES</h4></li>
+            <li><h4>03&nbsp;BGF</h4></li>
+            <li><h4>04&nbsp;cafe JIJO</h4></li>
+            <li><h4>05&nbsp;Dear, Xmas</h4></li>
           </ul>
         </div>
 
