@@ -138,10 +138,6 @@ header {
         text-align: center;
         line-height: 1;
         transition: .3s ease-in-out;
-        &:hover {
-          color: #191917;
-          letter-spacing: 0;
-        }
         &.active::after {
           content: '';
           width: 100%;

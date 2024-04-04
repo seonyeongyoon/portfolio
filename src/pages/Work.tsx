@@ -1,6 +1,22 @@
 import "@/styles/Work.scss";
-import { motion } from 'framer-motion';
+import { Variants, motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
+
+const scrollVariants: Variants = {
+  offscreen: {
+    opacity: 0,
+    y: 200
+  },
+  onscreen: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      //type: "spring",
+      bounce: 0.6,
+      duration: 0.7
+    }
+  }
+};
 
 
 const Work = () => {
@@ -32,21 +48,6 @@ const Work = () => {
   }, []);
   
   
-  // const scrollToRef = (ref: React.MutableRefObject<HTMLDivElement>) => {
-  //   if (ref.current) {
-  //     window.scrollTo({
-  //       top: ref.current.offsetTop,
-  //       behavior: 'smooth'
-  //     });
-  //   }
-  // };
-
-  // const handleAnchorClick = (index: number) => {
-  //   if (projectRefs.current[index]) {
-  //     scrollToRef(projectRefs.current[index]);
-  //   }
-  // };
-
 
 
   const ParallaxText = ({ children }: { children: React.ReactNode }) => {
@@ -66,14 +67,24 @@ const Work = () => {
   
 
   return (
-    
     <>
-      <section className="intro">
+      <motion.section 
+        className="intro" 
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.8 }}
+        variants={scrollVariants}
+      >
         <h2 className="gallient">PROJECTS</h2>
         <p>제가 작업한 project들을 소개합니다.😀</p>
-      </section>
+      </motion.section>
 
-      <section className="works">
+      <motion.section 
+        className="works" 
+        initial={{ opacity: 0}} 
+        animate={{ opacity: 1}} 
+        transition={{ duration: 0.7, delay: 0.9 }}
+      >
         <div ref={anchorRef} className={`anchors ${isFixedAnchors ? 'fixed' : ''}`}>
           <ul className="anchors__container">
             <li><h4>01&nbsp;SEAH</h4></li>
@@ -230,7 +241,7 @@ const Work = () => {
             </a>
           </motion.div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };

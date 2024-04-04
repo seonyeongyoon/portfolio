@@ -18,6 +18,10 @@
       .links {
         a {
           color: #191917;
+          &:hover {
+            color: #191917;
+            letter-spacing: 0;
+          }
         }
       }
     }
@@ -110,6 +114,10 @@
       .links {
         a {
           color: #ffffffde;
+          &:hover {
+            color: #beb5ab;
+            letter-spacing: 0;
+          }
         }
       }
     }
