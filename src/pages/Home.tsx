@@ -9,8 +9,7 @@ import {
   useTransform,
   useMotionValue,
   useVelocity,
-  useAnimationFrame,
-  useViewportScroll
+  useAnimationFrame
 } from "framer-motion";
 import 'swiper/css';
 import "@/styles/Home.scss";
