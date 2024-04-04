@@ -9,7 +9,8 @@ import {
   useTransform,
   useMotionValue,
   useVelocity,
-  useAnimationFrame
+  useAnimationFrame,
+  useViewportScroll
 } from "framer-motion";
 import 'swiper/css';
 import "@/styles/Home.scss";
@@ -39,15 +40,32 @@ const scrollVariants: Variants = {
   }
 };
 
+const rotateVariants: Variants = {
+  offscreen: {
+    opacity: 0,
+    y: -70,
+    rotate: 30
+  },
+  onscreen: {
+    opacity: 1,
+    y: 0,
+    rotate: 0,
+    transition: {
+      bounce: 0.6,
+      duration: 0.6
+    }
+  }
+}
+
 const wrap = (min: number, max: number, v: number) => {
   const rangeSize = max - min;
   return ((((v - min) % rangeSize) + rangeSize) % rangeSize) + min;
 };
 
 
-const ParallaxText = ({ children, baseVelocity = 100 }: ParallaxProps) => {
+const ParallaxText = ({children, baseVelocity = 100}: ParallaxProps) => {
   const baseX = useMotionValue(0);
-  const { scrollY } = useScroll();
+  const {scrollY} = useScroll();
   const scrollVelocity = useVelocity(scrollY);
   const smoothVelocity = useSpring(scrollVelocity, {
     damping: 50,
@@ -62,25 +80,18 @@ const ParallaxText = ({ children, baseVelocity = 100 }: ParallaxProps) => {
   const directionFactor = useRef<number>(1);
   useAnimationFrame((_, delta) => {
     let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
-  
-    //스크롤 방향 전환
+
     if (velocityFactor.get() < 0) {
       directionFactor.current = -1;
     } else if (velocityFactor.get() > 0) {
       directionFactor.current = 1;
     }
-  
+
     moveBy += directionFactor.current * moveBy * velocityFactor.get();
-  
+    
     baseX.set(baseX.get() + moveBy);
   });
 
-  /**
-   * 하위 텍스트를 반복하는 횟수를 동적으로 계산
-   * 텍스트와 뷰포트의 크기에 따라 x motion 값은 현재 -20%에서 -45% 사이에 있음.
-   * 자식요소가 4개이므로 100% / 4 = 25%
-   * 이 수차는 동적으로 생성된 자식요소의 개수에서 파생됨.
-   */
   return (
     <div className="parallax">
       <motion.div className="scroller" style={{ x }}>
@@ -99,6 +110,8 @@ const Home = () => {
   const handleSlideChange = (swiper: Swiper) => {
     setCurrentSlide(swiper.activeIndex);
   };
+
+
   
   return (
     <>
@@ -180,10 +193,9 @@ const Home = () => {
             </div>
             <Swiper 
               className="slideWrap"
-              spaceBetween={20}
+              spaceBetween={0}
               slidesPerView={1}
               onSlideChange={handleSlideChange}
-              onSwiper={(swiper) => console.log(swiper)}
             >
               <SwiperSlide className="slide">
                 <a href="https://www.seah.co.kr/" target='_blank'>
@@ -200,7 +212,7 @@ const Home = () => {
                 <a href="https://www.seahsteel.co.kr/" target='_blank'>
                   <div className="desc">
                     <h4 className="title">세아그룹 계열사</h4>
-                    <p>통합 웹사이트 정체성에 맞는 시각적 / 기능적인 일관성을 유지하기 위해, 브랜드 아이덴티티 요소를 체계적으로 재사용하고 각 UI 구성 요소를 모듈화한 디자인 시스템을 구축하였습니다. 모든 요소들은 계열사 각각의 콘텐츠 목적에 맞게끔 조화롭고 유연하게 배치할 수 있도록 제작 되었습니다.</p>
+                    <p>통합 웹사이트 정체성에 맞는 시각적 / 기능적인 일관성을 유지하기 위해 브랜드 아이덴티티 요소를 체계적으로 재사용하고 각 UI 구성 요소를 모듈화한 디자인 시스템을 구축하였습니다. <span className='wsnr'>모든 요소들은</span> 계열사 각각의 콘텐츠 목적에 맞게끔 조화롭고 유연하게 배치할 수 있도록 제작 되었습니다.</p>
                   </div>
                   <figure>
                     <img src="/assets/images/seahSteel.png" alt="" />
@@ -233,7 +245,7 @@ const Home = () => {
                 <a href="https://dear-xmas.vercel.app/" target='_blank'>
                   <div className="desc">
                     <h4 className="title">dear, xmas</h4>
-                    <p>Dear, Xmas는 크리스마스의 감성과 특별한 순간을 함께 쌓아가는 웹 서비스입니다. 크리스마스와 관련된 컨텐츠를 즐길 수 있습니다. 코드 충돌을 줄이고 브랜치 관리가 용이한 Git Flow 방식을 사용하여 기능 브랜치를 만들고 각자 작업 브랜치를 따로 생성하여 작업하였습니다.</p>
+                    <p>Dear, Xmas는 크리스마스의 감성과 특별한 순간을 함께 쌓아가는 웹 서비스입니다.<br className='pcOnly'/> 크리스마스와 관련된 컨텐츠를 즐길 수 있습니다. 코드 충돌을 줄이고 브랜치 관리가 용이한 Git Flow 방식을 사용하여 기능 브랜치를 만들고 각자 작업 브랜치를 따로 생성하여 작업하였습니다.</p>
                   </div>
                   <figure>
                     <img src="/assets/images/dearXmas.png" alt="" />
@@ -276,13 +288,21 @@ const Home = () => {
           whileInView="onscreen"
           viewport={{ once: true, amount: 0.8 }}
         >
-          <motion.div variants={scrollVariants}>WANT TO TALK ABOUT SOMETHING?</motion.div>
-          <motion.h4 variants={scrollVariants}>
+          <motion.div 
+            variants={rotateVariants}
+          >
+            WANT TO TALK ABOUT SOMETHING?
+          </motion.div>
+          <motion.h4
+            initial={{ opacity: 0, x: 0, y: 300 }} 
+            animate={{ opacity: 1, x: 0, y: 0 }} 
+            transition={{ duration: 0.7, delay: 0.9 }}
+          >
             <a href="mailto:sun940204@naver.com">
               <span className="gallient">Get In Touch</span>
             </a>
           </motion.h4>
-          <motion.div className="sns" variants={scrollVariants}>
+          <motion.div className="sns">
             <ul>
               <li>
                 <a href="https://github.com/seonyeongyoon">GITHUB</a>

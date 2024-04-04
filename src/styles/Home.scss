@@ -132,7 +132,7 @@
     display: flex;
     //transform: translate3d(18.75rem, 0px, 0px);
     gap: 3rem;
-    margin-left: 20rem;
+    margin-left: 16rem;
     .slide a {
       display: flex;
       align-items: center;
@@ -167,9 +167,9 @@
   .textLine {
     div {
       white-space: nowrap;
-      animation: toLeft 15s linear infinite;
+      //animation: toLeft 15s linear infinite;
       &:nth-child(2) {
-        animation-name: toRight;
+        //animation-name: toRight;
         div {
           span {
             -webkit-text-stroke-width: 1px;

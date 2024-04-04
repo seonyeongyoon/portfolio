@@ -39,16 +39,19 @@ const Header = () => {
   return (
     <header>
       <div className={`headerBar ${isScrolled ? "scrolled" : ""}`}>
-        <div className="logoWrap">
-          <p><Link to="/">FRONTEND DEVELOPER</Link></p>
-          <h1><Link to="/">YOON SEONYEONG</Link></h1>
-        </div>
-        <button 
-          className="themeBtn"
-          onClick={toggleDarkMode}
-          title={isDarkMode ? '라이트모드' : '다크모드'}
-        >  
-        </button>
+        {!isClicked && (
+          <div className="logoWrap">
+            <p><Link to="/">FRONTEND DEVELOPER</Link></p>
+            <h1><Link to="/">YOON SEONYEONG</Link></h1>
+          </div>
+        )}
+        {!isClicked && (
+          <button 
+            className="themeBtn"
+            onClick={toggleDarkMode}
+            title={isDarkMode ? '라이트모드' : '다크모드'}
+          ></button>
+        )}
         <div className="menuBtnWrap">
           <button
             className={`menuBtn ${isClicked ? 'close' : ''}`} 
