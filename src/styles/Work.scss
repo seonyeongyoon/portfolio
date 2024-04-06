@@ -153,7 +153,16 @@ section {
 }
 
 @media (max-width: 768px) {
+  .intro {
+    p {
+      font-size: 1.2rem;
+    }
+  }
   .works {
+    margin-top: 8vh;
+    .anchors {
+      display: none;
+    }
     .projects {
       &__Item {
         a  {
@@ -167,9 +176,29 @@ section {
             font-size: 5rem;
           }
         }
-        .textContent {
+        .imgContent {
           .top {
             display: none;
+          }
+        }
+        .textContent {
+          padding: 3rem 1rem;
+          flex-direction: column;
+          .top {
+            position: static;
+            height: auto;
+            margin-left: 0;
+            h2 {
+              font-size: 4rem;
+            }
+            h2:not(:first-child) {
+              display: none;
+            }
+          }
+          .bottom {
+            p {
+              font-size: 1.3rem;
+            }
           }
         }
       }
