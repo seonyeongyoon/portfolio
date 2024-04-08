@@ -85,7 +85,7 @@ const Work = () => {
         animate={{ opacity: 1}} 
         transition={{ duration: 0.7, delay: 0.9 }}
       >
-        <div ref={anchorRef} className={`anchors ${isFixedAnchors ? 'fixed' : ''}`}>
+        {/* <div ref={anchorRef} className={`anchors ${isFixedAnchors ? 'fixed' : ''}`}>
           <ul className="anchors__container">
             <li><h4>01&nbsp;SEAH</h4></li>
             <li><h4>02&nbsp;SEAH AFFILATES</h4></li>
@@ -93,7 +93,7 @@ const Work = () => {
             <li><h4>04&nbsp;cafe JIJO</h4></li>
             <li><h4>05&nbsp;Dear, Xmas</h4></li>
           </ul>
-        </div>
+        </div> */}
 
         <div className="projects">
           {/* 1 */}
@@ -226,7 +226,7 @@ const Work = () => {
               <div className="imgContent">
                 <ParallaxText>Dear, Xmas</ParallaxText>
                 <div className="bottom">
-                  <h3>04</h3><h3>Dear, Xmas</h3>
+                  <h3>05</h3><h3>Dear, Xmas</h3>
                 </div>
                 <figure className="imgWrap">
                   <img src="/assets/images/dearXmas.png" alt="" />
@@ -236,6 +236,35 @@ const Work = () => {
                 <ParallaxText>Dear, Xmas</ParallaxText>
                 <div className="bottom">
                   <p>Dear, Xmas는 크리스마스의 감성과 특별한 순간을 함께 쌓아가는 웹 서비스입니다. 크리스마스와 관련된 컨텐츠를 즐길 수 있습니다. 코드 충돌을 줄이고 브랜치 관리가 용이한 Git Flow 방식을 사용하여 기능 브랜치를 만들고 각자 작업 브랜치를 따로 생성하여 작업하였습니다.</p>
+                </div>
+              </div>
+            </a>
+          </motion.div>
+
+          {/* 6 */}
+          <motion.div
+            className={`projects__Item ${isFixedIndexes.includes(5) ? 'fixed' : ''}`}
+            initial="offscreen"
+            whileInView="onscreen"
+            ref={el => projectRefs.current[5] = el}
+          >
+            <a 
+              href="https://traffic-report.netlify.app/" 
+              target="_blank"
+            >
+              <div className="imgContent">
+                <ParallaxText>Traffic Report</ParallaxText>
+                <div className="bottom">
+                  <h3>06</h3><h3>Traffic Report</h3>
+                </div>
+                <figure className="imgWrap">
+                  <img src="/assets/images/traffic.png" alt="" />
+                </figure>
+              </div>
+              <div className="textContent">
+                <ParallaxText>Traffic Report</ParallaxText>
+                <div className="bottom">
+                  <p>한국도로공사에서 제공하는 OpenAPI를 사용하여 전국 톨게이트 영업소 위치, 주유소 현황, 실시간 교통 예보를 시각화하여 제공해주는 사이트입니다. 카카오맵 API룰 사용하여 전국 영업소 위치를 보여주는 영업소찾기 페이지를 구현하였습니다. 주유소 별 현황 페이지는 주유소명 검색 기능을 구현하였습니다. 실시간 교통예보 패이지에서는 Chart.js 라이브러리를 사용하여 구간 별 소요시간을 차트로 시각화하였습니다.</p>
                 </div>
               </div>
             </a>

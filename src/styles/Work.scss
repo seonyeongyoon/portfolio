@@ -143,7 +143,8 @@ section {
           word-break: keep-all;
         }
       }
-      &:nth-child(4) {
+      &:nth-child(5),
+      &:nth-child(6) {
         .imgContent {
           color: #191917;
         }

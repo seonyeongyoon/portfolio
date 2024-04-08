@@ -187,7 +187,7 @@ const Home = () => {
             <div className="slideNum">
               NO.
               <span className="gallient">
-                <span className="index">{currentSlide + 1}</span> / 5
+                <span className="index">{currentSlide + 1}</span> / 6
               </span>
             </div>
             <Swiper 
@@ -251,17 +251,17 @@ const Home = () => {
                   </figure>
                 </a>
               </SwiperSlide>
-              {/* <SwiperSlide className="slide">
-                <a href="/" target='_blank'>
+              <SwiperSlide className="slide">
+                <a href="https://traffic-report.netlify.app/" target='_blank'>
                   <div className="desc">
-                    <h4 className="title">Photoshop</h4>
-                    <p>포토샵 보정에 쓰이는 흑백, 엠보싱, 반전효과 등 여러 기능들을 javascript을 사용하여 직접 구현해보며 화소가 어떤 원리로 처리되는지 원리를 파악할 수 있었습니다.</p>
+                    <h4 className="title">실시간 교통정보 사이트</h4>
+                    <p>한국도로공사에서 제공하는 OpenAPI를 사용하여 전국 톨게이트 영업소 위치, 주유소 현황, 실시간 교통 예보를 시각화하여 제공해주는 사이트입니다. 카카오맵 API룰 사용하여 전국 영업소 위치를 보여주는 영업소찾기 페이지를 구현하였습니다. 주유소 별 현황 페이지는 주유소명 검색 기능을 구현하였습니다. 실시간 교통예보 패이지에서는 Chart.js 라이브러리를 사용하여 구간 별 소요시간을 차트로 시각화하였습니다.</p>
                   </div>
                   <figure>
-                    <img src="/assets/images/photoshop.png" alt="" />
+                    <img src="/assets/images/traffic.png" alt="" />
                   </figure>
                 </a>
-              </SwiperSlide> */}
+              </SwiperSlide>
             </Swiper>
           </motion.div>
         </motion.div>
