@@ -20,9 +20,9 @@ const scrollVariants: Variants = {
 
 
 const Work = () => {
-  const [isFixedAnchors, setIsFixedAnchors] = useState(false);
+ //const [isFixedAnchors, setIsFixedAnchors] = useState(false);
   const [isFixedIndexes, setIsFixedIndexes] = useState<number[]>([]);
-  const anchorRef = useRef<HTMLDivElement>(null);
+  //const anchorRef = useRef<HTMLDivElement>(null);
   const projectRefs = useRef<(HTMLDivElement | null)[]>([]);
   useEffect(() => {
 
@@ -37,7 +37,7 @@ const Work = () => {
       setIsFixedIndexes(fixedIndexes);
 
       // 앵커가 상단에 닿으면 상태 업데이트
-      setIsFixedAnchors(window.scrollY > anchorRef.current!.offsetTop);
+      //setIsFixedAnchors(window.scrollY > anchorRef.current!.offsetTop);
     };
 
     window.addEventListener('scroll', handleScroll);
