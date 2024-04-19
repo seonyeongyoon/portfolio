@@ -281,11 +281,14 @@
       margin-left: 0;
       .slide a {
         flex-direction: column;
+        padding: 0 5%;
         .desc {
-          width: 90%;
+          //width: 90%;
+          width: auto;
         }
         figure {
-          width: 90%;
+          //width: 90%;
+          width: auto;
         }
       }
     }
