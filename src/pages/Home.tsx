@@ -307,7 +307,7 @@ const Home = () => {
                 <a href="https://github.com/seonyeongyoon">GITHUB</a>
               </li>
               <li>
-                <a href="https://www.notion.so/5c57a8f76c814815badc0301d705f5f7">NOTION</a>
+                <a href="https://www.notion.so/5c57a8f76c814815badc0301d705f5f7?pvs=4">NOTION</a>
               </li>
               <li>
                 <a href="https://www.linkedin.com/in/sun094">LINKEDIN</a>

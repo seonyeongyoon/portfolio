@@ -37,13 +37,13 @@ const DropDownMenu = React.memo(({ closeMenu, isOpen }: Iprops) => {
         </div>
         <ul className="snsWrap">
           <li>
-            <a href="www.naver.com">GITHUB</a>
+            <a href="https://github.com/seonyeongyoon">GITHUB</a>
           </li>
           <li>
-            <a href="www.naver.com">NOTION</a>
+            <a href="https://www.notion.so/5c57a8f76c814815badc0301d705f5f7?pvs=4">NOTION</a>
           </li>
           <li>
-            <a href="www.naver.com">LINKEDIN</a>
+            <a href="https://www.linkedin.com/in/sun094">LINKEDIN</a>
           </li>
         </ul>
       </div>
